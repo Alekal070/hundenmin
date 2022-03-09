@@ -1,0 +1,101 @@
+<html> 
+	<html lang="no"></html>
+	<head>
+		<title>Hunden min</title>
+		<style>
+
+#hund {
+    background-image: url("1f436.png");
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -50px;
+    left: -150px;
+    animation: hund 5s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes hund {
+    0% {
+        left:-1500px;
+    }
+    100% {
+        left: 1500px;
+        transform: rotate(720deg);
+    }
+}
+
+			body{
+				background-color:rgb(70, 209, 214);
+                overflow: hidden;
+			}
+
+			h1 {
+				color: rgb(70, 209, 214);
+				background-color:rgb(47, 141, 145);
+				text-align: center;
+				font-style: italic;
+				text-decoration-line: underline;
+				text-decoration-style: dashed;
+
+			}
+
+            h2{
+                text-align: center;
+                line-height: 50px;
+            }
+
+			p {
+				text-align: center;
+			}
+
+            .aligncenter {
+				text-align: center;
+			}
+
+            img:hover {
+  animation: shake 1.5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+            
+
+		</style>
+	</head>
+	<body> 
+		<h1>Hunden min</h1> 
+		<hr>
+		<ol>
+			<lin></lin>
+		</ol>
+        <h2>Om</h2>
+        <p class="aligncenter">
+			<img src="OIP.jfif" alt="Vis du ser denne meldingen så er det noe feil med koden til bilde til nettsiden!" width="400" />
+		</p>
+        <p>Dette er hunden min heter Rudolf og han er 2 år</p> 
+        <section>
+        <h2>Hva han spiser</h2>
+        <p>Rudolf spiser bare hundemat de fleste dagene. Noen dager får han også en brøskive med leverpostei.</p>
+
+        <h2>Leketid</h2>
+        <p>Han leker ofte ute og av og til inne. Han elsker mest å leke med bamser og baller.</p>
+        <div id="hund"></div>
+	</body>
+</html>
