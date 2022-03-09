@@ -4,6 +4,15 @@
 		<title>Hunden min</title>
 		<style>
 
+.unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #cc0000;
+      }
+
 #hund {
     background-image: url("1f436.png");
     z-index: 1;
@@ -79,6 +88,7 @@
 		</style>
 	</head>
 	<body> 
+        <div class="unselectable">
 		<h1>Hunden min</h1> 
 		<hr>
 		<ol>
@@ -96,5 +106,6 @@
         <h2>Leketid</h2>
         <p>Han leker ofte ute og av og til inne. Han elsker mest å leke med bamser og baller.</p>
         <div id="hund"></div>
+    </div>
 	</body>
 </html>
