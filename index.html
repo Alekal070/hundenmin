@@ -2,44 +2,61 @@
 	<html lang="no"></html>
 	<head>
 		<title>Hunden min</title>
-		<style>
-
-.unselectable {
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        color: #000;
-      }
+		<style>      
 
 #hund {
-    background-image: url("1f436.png");
+    background-image: url("cindyno.png");
     z-index: 1;
     width: 500px;
-    height: 500px;
+    height: 250px;
     position: absolute;
-    bottom: -50px;
-    left: -150px;
-    animation: hund 5s;
-    animation-delay: 5s;
+    bottom: -100px;
+    left: -100px;
+    animation: hund 10s;
+    animation-delay: 0s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
 @keyframes hund {
     0% {
-        left:-1500px;
+      left:-500px;
+    }
+    25%, 50% {
+        transform: rotate(-100deg);
     }
     100% {
         left: 1500px;
-        transform: rotate(720deg);
+        transform: rotate(1000deg);
     }
 }
 
 			body{
 				background-color:rgb(70, 209, 214);
+                overflow-x: hidden;
+                animation: hvitsvart 10s linear infinite;
+        animation-delay: 0s;
 			}
+
+      .regnbue {
+    font-family: cursive;
+    text-align :center;
+    animation: regnbue 10s linear infinite alternate;
+}
+
+@keyframes regnbue{
+    0% {color: #ff8b00}
+    10% {color: #e8ff00}
+    20% {color: #5dff00}
+    30% {color: #00ff2e}
+    40% {color: #00ffb9}
+    50% {color: #00b9ff}
+    60% {color: #002eff}
+    70% {color: #5d00ff}
+    80% {color: #e800ff}
+    90% {color: #ff008b}
+    100% {color: #ff0000}
+}
 
 			h1 {
 				color: rgb(70, 209, 214);
@@ -56,6 +73,10 @@
                 line-height: 50px;
             }
 
+            img {
+                border: 5px solid rgb(47, 141, 145);
+            }
+
 			p {
 				text-align: center;
 			}
@@ -65,23 +86,84 @@
 			}
 
             img:hover {
-  animation: shake 1.5s;
+  animation: sprell 2s;
 
   animation-iteration-count: infinite;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+h2 {
+  animation: fisk 10s linear infinite;
+  animation-delay: 0s;
+}
+
+.kontaktinfo {
+  padding: 100px;
+}
+
+@keyframes sprell {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 55% {
+    transform: rotateZ(5deg);
+  }
+  55%, 65% {
+    transform: rotateZ(-5deg);
+  }
+  65%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes fisk {
+  0% { 
+      transform: translate(1px, 2px) rotate(0deg); 
+    }
+  10% {
+       transform: translate(-1px, -3px) rotate(-1deg); 
+    }
+  20% {
+       transform: translate(-4px, 0px) rotate(1deg); 
+    }
+  30% {
+       transform: translate(3px, 3px) rotate(0deg); 
+    }
+  40% {
+       transform: translate(1px, -2px) rotate(1deg); 
+    }
+  50% {
+       transform: translate(-1px, 3px) rotate(-1deg); 
+    }
+  60% {
+       transform: translate(-4px, 1px) rotate(0deg); 
+    }
+  70% {
+       transform: translate(4px, 1px) rotate(-1deg); 
+    }
+  80% {
+       transform: translate(-1px, -1px) rotate(1deg); 
+    }
+  90% {
+       transform: translate(1px, 3px) rotate(0deg); 
+    }
+  100% {
+       transform: translate(2px, -2px) rotate(-1deg); 
+    }
 }
             
 
@@ -94,17 +176,18 @@
 		<ol>
 			<lin></lin>
 		</ol>
-        <h2>Om</h2>
+    <div class="regnbue"><h2>Om</h2></div>
         <p class="aligncenter">
-			<img src="OIP.jfif" alt="Vis du ser denne meldingen så er det noe feil med koden til bilde til nettsiden!" width="400" />
+			<img src="cindy.jpg" alt="Vis du ser denne meldingen så er det noe feil med koden til bilde til nettsiden!" width="400" />
 		</p>
-        <p>Dette er hunden min heter Rudolf og han er 2 år</p> 
+        <p>Dette er hunden min Cindy og hun er ca. 9 månder gammel.</p> 
         <section>
-        <h2>Hva han spiser</h2>
-        <p>Rudolf spiser bare hundemat de fleste dagene. Noen dager får han også en brøskive med leverpostei.</p>
+          <div class="regnbue"><h2>Hva hun spiser</h2></div>
+        <p>Cindy spiser hundemat de fleste dagene og noen få ganger for hun også en brødskive med leverpostei.</p>
 
-        <h2>Leketid</h2>
-        <p>Han leker ofte ute og av og til inne. Han elsker mest å leke med bamser og baller.</p>
+        <div class="regnbue"><h2>Leketid</h2></div>
+        <p>Hun leker ofte ute og av og til inne. Hun elsker mest å leke med bamser og baller.</p>
+        <div class="kontaktinfo"><p>Kontakt <strong>eieren</strong> på <a href="mailto:alekal07@tysverelev.no">alekal07@tysverelev.no</a></p></div>
         <div id="hund"></div>
     </div>
 	</body>
