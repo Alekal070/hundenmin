@@ -18,6 +18,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
+
 @keyframes hund {
     0% {
       left:-500px;
@@ -33,10 +34,40 @@
 
 			body{
 				background-color:rgb(70, 209, 214);
-                overflow-x: hidden;
-                animation: hvitsvart 10s linear infinite;
+        overflow-x: hidden;
+        animation: hvitsvart 10s linear infinite;
         animation-delay: 0s;
 			}
+
+      header{
+        height: 75px;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(47, 141, 145);
+      }
+
+      ul{
+        float: right;
+        list-style-type: none;
+        padding-right: 50px;
+      }
+
+      ul li{
+        display: inline-block;
+      }
+
+      ul li a{
+        text-decoration: none;
+        color:rgb(70, 209, 214);
+        padding: 5px 20px;
+        border: 1px solid;
+        margin-right: 10px;
+      }
+
+      ul li a:hover{
+        background-color: black;
+        
+      }
 
       .regnbue {
     font-family: cursive;
@@ -45,23 +76,21 @@
 }
 
 @keyframes regnbue{
-    0% {color: #ff8b00}
-    10% {color: #e8ff00}
-    20% {color: #5dff00}
-    30% {color: #00ff2e}
-    40% {color: #00ffb9}
-    50% {color: #00b9ff}
-    60% {color: #002eff}
-    70% {color: #5d00ff}
-    80% {color: #e800ff}
-    90% {color: #ff008b}
-    100% {color: #ff0000}
+    0% {color:rgb(70, 209, 214)}
+    10% {color:rgb(47, 141, 145)}
+    20% {color:black}
+    30% {color:rgb(70, 209, 214)}
+    40% {color: rgb(47, 141, 145)}
+    50% {color: black}
+    60% {color: rgb(70, 209, 214)}
+    70% {color: rgb(47, 141, 145)}
+    80% {color: black}
+    90% {color: rgb(70, 209, 214)}
+    100% {color: rgb(47, 141, 145)}
 }
 
 			h1 {
-				color: rgb(70, 209, 214);
-				background-color:rgb(47, 141, 145);
-				text-align: center;
+				color:rgb(70, 209, 214);
 				font-style: italic;
 				text-decoration-line: underline;
 				text-decoration-style: dashed;
@@ -165,20 +194,36 @@ h2 {
        transform: translate(2px, -2px) rotate(-1deg); 
     }
 }
+
+.text h1{
+  float: left;
+  padding-left: 50px;
+}
+
             
 
 		</style>
 	</head>
 	<body> 
-        <div class="unselectable">
-		<h1>Hunden min</h1> 
-		<hr>
+
+    <header>
+      <div class="main">
+        </div>
+        <div class="text">
+          <h1>Hunden min</h1>
+        </div>
+        <ul>
+          <li><a href="info.txt">Mer Info</a></li>
+          <li><a href="eier.txt">Eieren</a></li>
+        </ul>
+      </div>
+    </header>
 		<ol>
 			<lin></lin>
 		</ol>
     <div class="regnbue"><h2>Om</h2></div>
         <p class="aligncenter">
-			<img src="cindy.jpg" alt="Vis du ser denne meldingen så er det noe feil med koden til bilde til nettsiden!" width="400" />
+			<img src="cindy.jpg" alt="Vis du ser denne meldingen så er det noe feil med nettsiden!" width="400" />
 		</p>
         <p>Dette er hunden min Cindy og hun er ca. 9 månder gammel.</p> 
         <section>
